@@ -1,3 +1,18 @@
+#Shortcut to create new PAT 
+usethis::create_github_token()
+
+# Save PAT 
+gitcreds::gitcreds_set() 
+
+#Check things are configured correctly
+usethis::git_sitrep()
+
+# Old method to save GITHUB_PAT as an environment var
+usethis::edit_r_environ()
+
+# to create a new repo in Github from the current project
+usethis::use_github()
+
 
 
 ## Header ----------------------------------------------------------------------
