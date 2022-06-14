@@ -1,3 +1,8 @@
+#From
+
+# https://happygitwithr.com/common-remote-setups.html?q=common%20#common-remote-setups
+
+
 #Shortcut to create new PAT 
 usethis::create_github_token()
 
@@ -10,10 +15,11 @@ usethis::git_sitrep()
 # Old method to save GITHUB_PAT as an environment var
 usethis::edit_r_environ()
 
-# to create a new repo in Github from the current project
+# to create a new repo in Github from the current project - if it doesn't exist already
 usethis::use_github()
 
-
+# if the repo already exists:
+usethis::create_from_github("OWNER/REPO", fork = FALSE)
 
 ## Header ----------------------------------------------------------------------
 
